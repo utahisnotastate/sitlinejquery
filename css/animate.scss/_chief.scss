@@ -1,0 +1,111 @@
+$main:#C7672E;
+$bubble: #CF875C;
+$choices: #A73E00;
+$white: white;
+
+html, body {
+    height: 100%;
+}
+
+
+.chief {
+     background-color: $white;
+.header {
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: $main;
+    color: $white;
+    font-size: 1.2em;
+    height: 20vh;
+    
+   }
+   
+   #conversation {
+       display: flex;
+       height: auto;
+       position: relative;
+       flex-direction: column;
+       align-items: flex-start;
+      
+       overflow-y: scroll;
+       #choices {
+           position: absolute;
+           bottom: 0px;
+       }
+       
+       .character-text {
+            @include slideInLeft(
+              $duration: 1s
+          );
+           border: 2px solid $bubble;
+       }
+        .charactertexts-chief {
+           @extend .character-text;
+       }
+       .player-chose-left {
+            @include slideInRight(
+              $duration: 1s
+          );
+           align-self: flex-end;
+           border: 2px solid $main;
+       }
+       .player-chose-right {
+            @include slideInRight(
+              $duration: 1s
+          );
+           align-self: flex-end;
+           border: 2px solid $main;
+       }
+   }
+
+   #userinputbar {
+
+       height: 20vh;
+       border: 2px solid $choices;
+       background-color: $choices;
+    
+    #swiperow {
+       display: flex;
+       background-color: $choices;
+       justify-content: space-between;
+       color: $white;
+                
+   }
+  
+   .userchoicescontainer {
+       display: flex;
+       flex-direction: row;
+      justify-content: space-between;
+       background-color: $choices;
+        
+       
+
+       #firstchoice {
+           color: $white;
+           border:1px solid $white;
+            flex-basis: 50%;
+           p {
+          
+          
+           background-color: $choices;
+                color: white;
+                }
+            }
+            #secondchoice {
+                 flex-basis: 50%;
+                color: $white;
+                border:1px solid $white;
+                p {
+                flex-grow: 1;
+                
+                border:1px solid $white;
+                padding-left: 3px;
+                }
+            }
+       
+          }
+           }
+}

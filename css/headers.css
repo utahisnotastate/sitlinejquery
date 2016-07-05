@@ -1,0 +1,1009 @@
+html, body {
+  height: 100%;
+}
+
+.sarge {
+  background-color: white;
+}
+
+.sarge .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #171F86;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.sarge #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow: auto;
+}
+
+.sarge #conversation .character-text, .sarge .chief #conversation .charactertexts-chief, .chief .sarge #conversation .charactertexts-chief {
+  border: 2px solid black;
+}
+
+.sarge #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #171F86;
+}
+
+.sarge #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #171F86;
+}
+
+.sarge #userinputbar {
+  height: 20vh;
+  border: 2px solid #060B51;
+  background-color: #060B51;
+}
+
+.sarge #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #060B51;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.sarge #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #060B51;
+}
+
+.sarge #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.sarge #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #060B51;
+  color: white;
+}
+
+.sarge #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.sarge #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.central {
+  background-color: white;
+}
+
+.central .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #15324C;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.central #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.central #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.central #conversation .character-text, .central .chief #conversation .charactertexts-chief, .chief .central #conversation .charactertexts-chief {
+  border: 2px solid #365571;
+}
+
+.central #conversation .charactertexts-dispatch {
+  border: 2px solid grey;
+}
+
+.central #conversation .charactertexts-swat {
+  border: 2px solid yellow;
+}
+
+.central #conversation .charactertexts-chief {
+  border: 2px solid #CF875C;
+}
+
+.central #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #15324C;
+}
+
+.central #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #15324C;
+}
+
+.central #userinputbar {
+  height: 20vh;
+  border: 2px solid #082036;
+  background-color: #082036;
+}
+
+.central #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #082036;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.central #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #082036;
+}
+
+.central #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.central #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #082036;
+  color: white;
+}
+
+.central #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.central #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.hostage {
+  background-color: white;
+}
+
+.hostage .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #342E6B;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.hostage #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.hostage #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.hostage #conversation .character-text, .hostage .chief #conversation .charactertexts-chief, .chief .hostage #conversation .charactertexts-chief {
+  border: 2px solid #625E8C;
+}
+
+.hostage #conversation .charactertexts-hostage {
+  border: 2px solid #625E8C;
+}
+
+.hostage #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #342E6B;
+}
+
+.hostage #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #342E6B;
+}
+
+.hostage #userinputbar {
+  height: 20vh;
+  border: 2px solid #0E0942;
+  background-color: #0E0942;
+}
+
+.hostage #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0E0942;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.hostage #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0E0942;
+}
+
+.hostage #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.hostage #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #0E0942;
+  color: white;
+}
+
+.hostage #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.hostage #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+.employee {
+  background-color: white;
+}
+
+.employee .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #811E81;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.employee #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.employee #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.employee #conversation .charactertexts-employee {
+  border: 2px solid #873C87;
+}
+
+.employee #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #811E81;
+}
+
+.employee #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #811E81;
+}
+
+.employee #userinputbar {
+  height: 20vh;
+  border: 2px solid #6D006D;
+  background-color: #6D006D;
+}
+
+.employee #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6D006D;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.employee #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #6D006D;
+}
+
+.employee #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.employee #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #6D006D;
+  color: white;
+}
+
+.employee #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.employee #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.criminal {
+  background-color: white;
+}
+
+.criminal .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #173623;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.criminal #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.criminal #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.criminal #conversation .character-text, .criminal .chief #conversation .charactertexts-chief, .chief .criminal #conversation .charactertexts-chief {
+  border: 2px solid black;
+}
+
+.criminal #conversation .charactertexts-criminal {
+  border: 2px solid black;
+}
+
+.criminal #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #173623;
+}
+
+.criminal #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #173623;
+}
+
+.criminal #userinputbar {
+  height: 20vh;
+  border: 2px solid #1F2722;
+  background-color: #1F2722;
+}
+
+.criminal #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1F2722;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.criminal #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1F2722;
+}
+
+.criminal #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.criminal #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #1F2722;
+  color: white;
+}
+
+.criminal #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.criminal #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.chief {
+  background-color: white;
+}
+
+.chief .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #C7672E;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.chief #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.chief #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.chief #conversation .character-text, .chief #conversation .charactertexts-chief {
+  border: 2px solid #CF875C;
+}
+
+.chief #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #C7672E;
+}
+
+.chief #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #C7672E;
+}
+
+.chief #userinputbar {
+  height: 20vh;
+  border: 2px solid #A73E00;
+  background-color: #A73E00;
+}
+
+.chief #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #A73E00;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.chief #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #A73E00;
+}
+
+.chief #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.chief #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #A73E00;
+  color: white;
+}
+
+.chief #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.chief #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.discipline {
+  background-color: white;
+}
+
+.discipline .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #932528;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.discipline #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.discipline #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.discipline #conversation .character-text, .discipline .chief #conversation .charactertexts-chief, .chief .discipline #conversation .charactertexts-chief {
+  border: 2px solid black;
+}
+
+.discipline #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #932528;
+}
+
+.discipline #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #932528;
+}
+
+.discipline #userinputbar {
+  height: 20vh;
+  border: 2px solid #5F0002;
+  background-color: #5F0002;
+}
+
+.discipline #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5F0002;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.discipline #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #5F0002;
+}
+
+.discipline #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.discipline #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #5F0002;
+  color: white;
+}
+
+.discipline #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.discipline #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.commendation {
+  background-color: white;
+}
+
+.commendation .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #1F7243;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.commendation #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.commendation #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.commendation #conversation .character-text, .commendation .chief #conversation .charactertexts-chief, .chief .commendation #conversation .charactertexts-chief {
+  border: 2px solid black;
+}
+
+.commendation #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #1F7243;
+}
+
+.commendation #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #1F7243;
+}
+
+.commendation #userinputbar {
+  height: 20vh;
+  border: 2px solid #05411F;
+  background-color: #05411F;
+}
+
+.commendation #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #05411F;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.commendation #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #05411F;
+}
+
+.commendation #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.commendation #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #05411F;
+  color: white;
+}
+
+.commendation #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.commendation #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}

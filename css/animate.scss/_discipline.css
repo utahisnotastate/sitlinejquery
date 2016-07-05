@@ -1,0 +1,120 @@
+html, body {
+  height: 100%;
+}
+
+.discipline {
+  background-color: white;
+}
+
+.discipline .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.discipline #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.discipline #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.discipline #conversation .character-text {
+  border: 2px solid black;
+}
+
+.discipline #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid black;
+}
+
+.discipline #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid black;
+}
+
+.discipline #userinputbar {
+  height: 20vh;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.discipline #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.discipline #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+.discipline #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+}
+
+.discipline #userinputbar .userchoicescontainer #firstchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: black;
+  color: white;
+}
+
+.discipline #userinputbar .userchoicescontainer #secondchoice {
+  color: white;
+  border: 1px solid white;
+}
+
+.discipline #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}

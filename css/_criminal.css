@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+}
+
+.criminal {
+  background-color: white;
+}
+
+.criminal .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #173623;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.criminal #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.criminal #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.criminal #conversation .character-text {
+  border: 2px solid black;
+}
+
+.criminal #conversation .charactertexts-criminal {
+  border: 2px solid black;
+}
+
+.criminal #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #173623;
+}
+
+.criminal #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #173623;
+}
+
+.criminal #userinputbar {
+  height: 20vh;
+  border: 2px solid #1F2722;
+  background-color: #1F2722;
+}
+
+.criminal #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1F2722;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.criminal #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #1F2722;
+}
+
+.criminal #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.criminal #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #1F2722;
+  color: white;
+}
+
+.criminal #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.criminal #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}

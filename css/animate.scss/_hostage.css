@@ -1,0 +1,127 @@
+html, body {
+  height: 100%;
+}
+
+.hostage {
+  background-color: white;
+}
+
+.hostage .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #342E6B;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+.hostage #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.hostage #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+.hostage #conversation .character-text {
+  border: 2px solid #625E8C;
+}
+
+.hostage #conversation .charactertexts-hostage {
+  border: 2px solid #625E8C;
+}
+
+.hostage #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #342E6B;
+}
+
+.hostage #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #342E6B;
+}
+
+.hostage #userinputbar {
+  height: 20vh;
+  border: 2px solid #0E0942;
+  background-color: #0E0942;
+}
+
+.hostage #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0E0942;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.hostage #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0E0942;
+}
+
+.hostage #userinputbar .userchoicescontainer #firstchoice {
+  color: white;
+  border: 1px solid white;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+}
+
+.hostage #userinputbar .userchoicescontainer #firstchoice p {
+  background-color: #0E0942;
+  color: white;
+}
+
+.hostage #userinputbar .userchoicescontainer #secondchoice {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  color: white;
+  border: 1px solid white;
+}
+
+.hostage #userinputbar .userchoicescontainer #secondchoice p {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid white;
+  padding-left: 3px;
+}

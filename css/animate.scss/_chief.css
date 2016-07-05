@@ -1,0 +1,109 @@
+html, body {
+  height: 100%;
+}
+
+#chief {
+  background-color: white;
+}
+
+#chief .header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #171F86;
+  color: white;
+  font-size: 1.2em;
+  height: 20vh;
+}
+
+#chief #conversation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: relative;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-y: scroll;
+}
+
+#chief #conversation #choices {
+  position: absolute;
+  bottom: 0px;
+}
+
+#chief #conversation .character-text {
+  border: 2px solid black;
+}
+
+#chief #conversation .player-chose-left {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #171F86;
+}
+
+#chief #conversation .player-chose-right {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  border: 2px solid #171F86;
+}
+
+#chief #userinputbar {
+  height: 20vh;
+  border: 2px solid #060B51;
+  background-color: #060B51;
+}
+
+#chief #userinputbar #swiperow {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #060B51;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+#chief #userinputbar .userchoicescontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #060B51;
+}
+
+#chief #userinputbar .userchoicescontainer .choices {
+  color: white;
+}
+
+#chief #userinputbar .userchoicescontainer #firstchoice {
+  border: 1px solid white;
+  background-color: #060B51;
+  color: white;
+}
+
+#chief #userinputbar .userchoicescontainer #secondchoice {
+  border: 1px solid white;
+  padding-left: 3px;
+}

@@ -1,0 +1,41 @@
+
+#menu {
+ background: url(../slmenu.png) no-repeat center fixed;
+    background-size: cover;
+    
+    #title {
+        p {
+         display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #035ff0;
+    font-size: 1.5em;
+        }
+    }
+
+.mainmenu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+
+        a {
+            color: #035ff0;
+            text-decoration: none;
+        }
+}
+}
+
+#credits {
+    background-color: #035ff0;
+    color: white;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
